@@ -137,7 +137,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     # Есепті күнделікті 17:31-де жіберу
     job_queue.run_daily(
         send_daily_problem,
-        time=datetime.time(hour=2, minute=8, second=0, tzinfo=timezone_offset),
+        time=datetime.time(hour=9, minute=0, second=0, tzinfo=timezone_offset),
         data=chat_id,
         name=str(chat_id)
     )
